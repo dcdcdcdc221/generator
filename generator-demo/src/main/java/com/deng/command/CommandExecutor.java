@@ -19,7 +19,14 @@ public class CommandExecutor implements Runnable{
         System.out.println("输入--help 查看");
     }
 
+    /**
+     * 执行命令
+     * @param args 输入的参数
+     * @return
+     */
     public Integer doExecute(String[] args) {
-        return new CommandLine(new ConfigCommand()).execute(args);
+        //因为此前已经创建过final方法CommandLine commandLine 了，故直接调用即可
+        return commandLine().execute(args);
+        //return new CommandLine(new ConfigCommand()).execute(args);
     }
 }
