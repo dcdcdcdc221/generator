@@ -5,7 +5,6 @@ import picocli.CommandLine;
 
 import java.io.File;
 
-import static com.deng.generator.StaticGenerator.copyFileByHutool;
 
 public class Main {
     public static void main(String[] args) {
